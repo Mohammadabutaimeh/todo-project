@@ -1,25 +1,24 @@
-
 let userName = prompt('Please enter your name');
 let userGender = prompt('Please enter your gender!\n(male or female)').toLowerCase();
 switch(userGender){
     case 'male':
-        userAge = prompt(`Please enter your age Mr ${userName}!`).parseInt();
+        userAge = prompt(`Please enter your age Mr ${userName}!`)
         
         break;
     case 'female':
-        userAge = prompt(`Please enter your age Ms ${userName}!`).parseInt();
+        userAge = prompt(`Please enter your age Ms ${userName}!`)
        
         break;
     default:
-        userAge = prompt(`Please enter your age ${userName}!`).parseInt();
+        userAge = prompt(`Please enter your age ${userName}!`)
         
 }
 
-if (userAge<=0) {
+if (parseInt(userAge)<=0) {
    alert(`The age ${userAge} is less than or equal to zero !! `);   
 }
 
-let confirmation=confirm(" if you want to skip the welcoming message please press ok");
+confirmation=confirm(" if you want to skip the welcoming message please press ok");
 
 if (confirmation==false) {
     switch(userGender){
@@ -37,7 +36,7 @@ if (confirmation==false) {
     
 }
 
-const moreQuestions = confirm('Do you want to Answer more questions ?');
+let moreQuestions = confirm('Do you want to Answer more questions ?');
 
  let answers = [3];
 
