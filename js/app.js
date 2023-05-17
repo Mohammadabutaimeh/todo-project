@@ -19,7 +19,6 @@ if (parseInt(userAge)<=0) {
 }
 
 confirmation=confirm(" if you want to skip the welcoming message please press ok");
-
 if (confirmation==false) {
     switch(userGender){
         case 'male':
